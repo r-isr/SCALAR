@@ -1,0 +1,7 @@
+# Main dependencies (tested versions)
+torch==1.13.1
+torchvision==0.14.1
+timm==1.0.15
+numpy==1.19.5
+yacs==0.1.8
+iopath==0.1.10
