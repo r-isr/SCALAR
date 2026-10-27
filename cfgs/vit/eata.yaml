@@ -1,0 +1,33 @@
+CORRUPTION:
+  DATASET: imagenet 
+  SEVERITY:
+  - 5
+  TYPE:
+    - gaussian_noise
+    - shot_noise
+    - impulse_noise
+    - defocus_blur
+    - glass_blur
+    - motion_blur
+    - zoom_blur
+    - snow
+    - frost
+    - fog
+    - brightness
+    - contrast
+    - elastic_transform
+    - pixelate
+    - jpeg_compression
+MODEL:
+  ADAPTATION: eata
+  ARCH: Standard_VITB
+OPTIM:
+  BETA: 0.9
+  LR: 5e-05 #1e-05
+  METHOD: SGD
+  STEPS: 1
+  WD: 0.0
+TEST:
+  BATCH_SIZE: 4 #8 #4 cifar 8 imagenet
+
+    #imagenet: LR=1e-5, EMA_WEIGH=0.9,EMA_ATT=0.99,B==8
